@@ -1,0 +1,72 @@
+<header>
+    <!-- NAVBARAS -->
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="css/img/laisva.png" height="100" width="250"></a>
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                  <span class="navbar-toggler-icon ml-auto"></span>
+              </button>
+
+
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  
+                  <ul class="navbar-nav nav-left mr-auto">
+                      <li class="nav-item">
+                          <a class="text-white" key="home" href="index.html"><b>HOME</b></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="text-white" key="products" href="products.html"><b>PRODUCTS</b></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="text-white" key="aboutus" href="aboutUs.html"><b>ABOUT US</b></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="text-white" key="contacts" href="contacts.html"><b>CONTACTS</b></a>
+                      </li> 
+                      </ul>
+                      <ul class="nav navbar-nav ml-auto nav-left">
+                          <button          class="sign-in" key="signin" href="#" data-target="#sign-in" data-toggle="modal"><b>SIGN IN</b></button> 
+                          <button reversed class="sign-up" key="signup" href="#" data-target="#sign-up" data-toggle="modal">SIGN UP</button> 
+                      </ul>
+                      
+  
+                  </div>
+              </div>
+  
+          </nav>
+          <!-- NAVBARO PABAIGA -->
+              <!--Trigger-->
+              <div id="sign-in" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <button data-dismiss="modal" class="close">&times;</button>
+                              <h4 key="signin">SIGN IN</h4>
+                              <form>
+                                  <input type="text" key="username"  name="username" required class="username form-control" placeholder="Username" />
+                                  <input type="password" key="password"  name="password" required class="password form-control" placeholder="password" />
+                                  <input class="btn login" key="login"  type="submit" value="Login" />
+                                  <input class="btn forgot" key="forgot"  type="submit" value="Forgot Password"/>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="sign-up" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <button data-dismiss="modal" class="close">&times;</button>
+                              <h4 key="signup">SIGN UP</h4>
+                              <form>
+                                  <input type="text" key="username"  name="username" required class="username form-control" placeholder="Username" />
+                                  <input type="email" class="form-control" id="exampleInputEmail1"aria-describedby="emailHelp" data-translate="email_placeholder" placeholder="yourName@email.com" key="email" required>
+                                  <input type="password" key="password" name="password" required class="password form-control" placeholder="password" />
+                                  <input type="password" key="confpassword" name="confirm password" required class="password form-control" placeholder="confirm password" />
+                                  <input class="btn register" key="register" type="submit" value="Register" />
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      </header>

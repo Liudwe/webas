@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+  <title>webas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div id="nav-placeholder">
+    <script>
+      $.get("navbar.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+      </script></div>
+
+  
+
+    <article class="article">
+        <h1 class="contact" key="contactusat">Contact us at</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" key="type">Type</th>
+                <th scope="col" key="address">Address</th>
+                <th scope="col" key="working">Working hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" key="email">Email</th>
+                <td>paskambink@tavoemailas.com</td>
+                <td>8am-5pm</td>
+              </tr>
+              <tr>
+                <th scope="row" key="phone">Phone</th>
+                <td>**85*41*200</td>
+                <td>8am-6pm</td>
+              </tr>
+              <tr>
+                <th scope="row" key="street">Street</th>
+                <td>1600 Pennsylvania Ave NW</td>
+                <td>8am-6pm</td>
+              </tr>
+            </tbody>
+          </table>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3016.7416854518638!2d-77.03678496512599!3d38.89793788559707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b76bf!2sThe%20White%20House!5e0!3m2!1sen!2slt!4v1586800720272!5m2!1sen!2slt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
+     </article>
+
+    <!-- Footeris -->
+    <div id="footer-placeholder">
+      <script>
+        $.get("footer.html", function(data){
+            $("#footer-placeholder").replaceWith(data);
+        });
+        </script></div>
+    <!-- footerio pabaiga -->
+
+</body> 
+    <script src="carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="popup.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="lang.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</html>

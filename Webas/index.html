@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<head>
+  <title>webas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div id="nav-placeholder">
+    <script>
+      $.get("navbar.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+      </script></div>
+
+  
+
+    <article>
+      <!-- KARUSELE -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-50" src="css/img/cart.jpg" alt="First slide">
+            <div class="centered" key="reliable"><B>MOST RELIABLE</B></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="css/img/toiletpaper.jpg" alt="Second slide">
+            <div class="centered" key="quarantine"><B>QUARANTINE</B></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="css/img/mask.jpg" alt="Third slide">
+            <div class="centered" key="supply"><B>SUPPLY SHOP</B></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="css/img/handsanitizer.jpg" alt="Fourth slide">
+            <div class="centered" key="taiwan"><B>IN TAIWAN</B></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="css/img/spagetthi.jpg" alt="Sixth slide">
+            <div class="centered" key="spagetis"><B>spagetthi</B></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-50" src="css/img/beans.png" alt="Seventh slide">
+            <div class="centered"><B>¯\_( ͡❛ ͜ʖ ͡❛)_/¯</B></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- KARUSELES PABAIGA -->
+
+
+      <section class="section1">
+        <h1 class="prod" key="popular"><b>MOST POPULAR PRODUCTS</b></h1>
+      </section>
+
+
+      <!-- pirmas produktas -->
+      <div class="product-thumb">
+          <div class="product-thumb-image">
+            <img src="css/img/grite.jpg">
+            <div class="quickview-title" id="clickme" key="view">Quick View</div>
+          </div>
+          <div class="product-thumb-title">
+            <h3>Orhidea Seasons</h3>
+            <h3>Price : 99€</h3>
+          </div>
+      </div>
+
+      <div class="product-view" id="extra">
+        <div class="close-btn">X</div>
+        <div class="product-big-image">
+          <img src="css/img/grite.jpg">
+        </div>
+        <div class="product-big-description">
+          <h2 key="toilet">TOILET PAPER</h2>
+          <h5><b>Orchidea Seasons</b></h5>
+          <h5><b>Brand: grite</b></h5>
+          <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star-half-o checked"></span>
+          <span class="fa fa-star"></span>
+          <div class="price">
+            <h4>Price: 99€</h4>
+          </div>
+          <button class="buybutton" key="cart"> <b>Add to cart</b> </button>
+          <p><b>Shipping:</b> No clue, depends</p>
+          <p><b>Description:</b> Works</p>
+        </div>
+      </div>
+
+      <!-- antras produktas -->
+      <div class="product-thumb">
+        <div class="product-thumb-image">
+          <img src="css/img/beans.jpeg">
+          <div class="quickview-title" id="clickme">Quick View</div>
+        </div>
+        <div class="product-thumb-title">
+          <h3>Original Baked Beans</h3>
+          <h3>Price : <span>3€</span></h3>
+        </div>
+    </div>
+
+    <div class="product-view" id="extra">
+      <div class="close-btn">X</div>
+      <div class="product-big-image">
+        <img src="css/img/beans.jpeg">
+      </div>
+      <div class="product-big-description">
+        <h2 key="beans">BEAN CANS</h2>
+        <h5><b>Original Baked Beans</b></h5>
+        <h5><b>Brand: Bush's Best</b></h5>
+        <h6><a href="#">-5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <div class="price">
+          <h4>Price: 3€</h4>
+        </div>
+        <button class="buybutton" key="cart"> <b>Add to cart</b> </button>
+        <p><b>Shipping:</b> When it grows</p>
+        <p><b>Description:</b> eatable</p>
+      </div>
+    </div>
+
+    <!-- trecias produktas -->
+    <div class="product-thumb">
+          <div class="product-thumb-image">
+          <img src="css/img/spagetis.jpg">
+            <div class="quickview-title" id="clickme">Quick View</div>
+            </div>
+            <div class="product-thumb-title">
+            <h3>Spaghettini</h3>
+            <h3>Price : <span>3€</span></h3>
+         </div>
+    </div>
+
+      <div class="product-view" id="extra">
+        <div class="close-btn">X</div>
+        <div class="product-big-image">
+          <img src="css/img/spagetis.jpg">
+        </div>
+        <div class="product-big-description">
+          <h2 key="spageciai">SpaGHETTO</h2>
+          <h5><b>Spaghettini</b></h5>
+          <h5><b>Brand: Alberto Poiatti</b></h5>
+          <h6><a href="#">10/10 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <div class="price">
+            <h4>Price: 3€</h4>
+          </div>
+          <button class="buybutton" key="cart"> <b>Add to cart</b> </button>
+          <p><b>Shipping:</b> Will come</p>
+          <p><b>Description:</b> Normal</p>
+        </div>
+      </div>
+      
+      <!-- ketvirtas produktas -->
+      <div class="product-thumb">
+          <div class="product-thumb-image">
+            <img src="css/img/sanitizer.jpg">
+            <div class="quickview-title" id="clickme">Quick View</div>
+          </div>
+          <div class="product-thumb-title">
+            <h3>Hand sanitizer</h3>
+            <h3>Price : <span>10€</span></h3>
+          </div>
+      </div>
+
+      <div class="product-view" id="extra">
+        <div class="close-btn">X</div>
+        <div class="product-big-image">
+          <img src="css/img/sanitizer.jpg">
+        </div>
+        <div class="product-big-description">
+          <h2 key="hand">Hand Sanitizer</h2>
+          <h5><b>Advanced</b></h5>
+          <h5><b>Brand: Purell</b></h5>
+          <h6><a href="#">99.9 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star-half-o checked"></span>
+          <span class="fa fa-star-half-o checked"></span>
+          <div class="price">
+            <h4>Price: 10€</h4>
+          </div>
+          <button class="buybutton" key="cart"> <b>Add to cart</b> </button>
+          <p><b>Shipping:</b> out of stocks</p>
+          <p><b>Description:</b> Kills 99.9% germs</p>
+        </div>
+      </div>
+          
+    </article>
+
+    <!-- Footeris -->
+    <div id="footer-placeholder">
+      <script>
+        $.get("footer.html", function(data){
+            $("#footer-placeholder").replaceWith(data);
+        });
+        </script></div>
+    <!-- footerio pabaiga -->
+
+</body> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="popup.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="lang.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</html>

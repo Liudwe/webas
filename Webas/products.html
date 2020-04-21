@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+
+<head>
+  <title>webas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="cart.js" async></script>
+
+</head>
+
+<body>
+
+  <div id="nav-placeholder">
+    <script>
+      $.get("navbar.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+      </script></div>
+    <article>
+        
+
+
+
+        <div class="row" id="products">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" key="toilet">Toilet paper</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" key="beans">Beans</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" key="spageciai2">Spaghetti</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" key="hand">Hand sanitizer</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                  <!-- TPOPIERIAUS PREKES -->
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <!-- PIRMA PREKE -->
+                    
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/grite.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Orhidea Seasons</h3>
+                    <h3>Price : <span>99€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/grite.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>TOILET PAPER</h2>
+                  <h5><b><span class="shop-item-title">Orchidea Seasons</span></b></h5>
+                  <h5><b>Brand: grite</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">99€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+                <!-- ANTRA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/regina.png">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Camomilla</h3>
+                    <h3>Price : <span>1€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/regina.png">
+                </div>
+                <div class="product-big-description">
+                  <h2>TOILET PAPER</h2>
+                  <h5><b><span class="shop-item-title">Camomilla</span></b></h5>
+                  <h5><b>Brand: Regina</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">1€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+                <!-- TRECIA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/zewa.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Deluxe Pure White</h3>
+                    <h3>Price : <span>0.1€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/zewa.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>TOILET PAPER</h2>
+                  <h5><b><span class="shop-item-title">Deluxe Pure White</span></b></h5>
+                  <h5><b>Brand: Zewa</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">0.1€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+                <!-- KETVIRTA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/ruta.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Crystal White</h3>
+                    <h3>Price: <span>12€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/ruta.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>TOILET PAPER</h2>
+                  <h5><b><span class="shop-item-title">Crystal White</span></b></h5>
+                  <h5><b>Brand: Ruta</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">12€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Clean</p>
+                </div>
+              </div>
+                </div>
+
+                <!-- BEANS PREKES -->
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                <!-- PIRMA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/beans.jpeg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Original Baked Beans</h3>
+                    <h3>Price : <span>3€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/beans.jpeg">
+                </div>
+                <div class="product-big-description">
+                  <h2>BEANS</h2>
+                  <h5><b><span class="shop-item-title">Original Baked Beans</span></b></h5>
+                  <h5><b>Brand: Bush's Best</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">3€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+                
+                <!-- ANTRA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/beans1.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Tomato Sauce</h3>
+                    <h3>Price : <span>2€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/beans1.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>BEANS</h2>
+                  <h5><b><span class="shop-item-title">Tomato Sauce</span></b></h5>
+                  <h5><b>Brand: HEINZ BEANZ</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">2€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+
+                <!-- TRECIA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/beans2.jpg" width="400" height="350">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Vegetarian</h3>
+                    <h3>Price : <span>33€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/beans2.jpg" width="50" height="400">
+                </div>
+                <div class="product-big-description">
+                  <h2>BEANS</h2>
+                  <h5><b><span class="shop-item-title">Vegetarian</span></b></h5>
+                  <h5><b>Brand: Brad's Organic</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">33€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+                  
+          
+
+                </div>
+
+                <!-- SPAGEČIO PREKĖS -->
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+
+                <!-- PIRMA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/spagetis.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Spaghettini</h3>
+                    <h3>Price : <span>3€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/spagetis.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>spaGHETTO</h2>
+                  <h5><b><span class="shop-item-title">Spaghettini</span></b></h5>
+                  <h5><b>Brand: Alberto Poiatti</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">3€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+                
+                <!-- ANTRA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/spagetis2.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Unknown</h3>
+                    <h3>Price : <span>2.33€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/spagetis2.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>spaGHETTO</h2>
+                  <h5><b><span class="shop-item-title">???</span></b></h5>
+                  <h5><b>Brand: Prima</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">2.33€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+
+                <!-- TRECIA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/spagetis3.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Meat</h3>
+                    <h3>Price : <span>1.99€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/spagetis3.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>spaGHETTO</h2>
+                  <h5><b><span class="shop-item-title">Meat</span></b></h5>
+                  <h5><b>Brand: Prego</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">1.99€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+
+                </div>
+
+                <!-- RANKOM PREKES -->
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+
+                <!-- PIRMA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/sanitizer.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Orhidea Seasons</h3>
+                    <h3>Price : <span>10€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/sanitizer.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>Hand Sanitizer</h2>
+                  <h5><b><span class="shop-item-title">Advanced</span></b></h5>
+                  <h5><b>Brand: Purell</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">10€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+                
+                <!-- ANTRA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/sanitizer2.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>Sensitive</h3>
+                    <h3>Price : <span>100€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/sanitizer2.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>Hand Sanitizer</h2>
+                  <h5><b><span class="shop-item-title">Sensitive</span></b></h5>
+                  <h5><b>Brand: DABur</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">100€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+
+                <!-- TRECIA PREKE -->
+                <div class="product-thumb">
+                  <div class="product-thumb-image">
+                    <img src="css/img/sanitizer3.jpg">
+                    <div class="quickview-title" id="clickme">Quick View</div>
+                  </div>
+                  <div class="product-thumb-title">
+                    <h3>White advanced</h3>
+                    <h3>Price : <span>252€</span></h3>
+                  </div>
+              </div>
+        
+              <div class="product-view" id="extra">
+                <div class="close-btn">X</div>
+                <div class="product-big-image">
+                  <img class="shop-item-image" src="css/img/sanitizer3.jpg">
+                </div>
+                <div class="product-big-description">
+                  <h2>Hand Sanitizer</h2>
+                  <h5><b><span class="shop-item-title"></span>White advanced</span></b></h5>
+                  <h5><b>Brand: Purell</b></h5>
+                  <h6><a href="#">5 reviews</a> <b>|</b> <a href="#">View all reviews</a></h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half-o checked"></span>
+                  <span class="fa fa-star"></span>
+                  <div class="price">
+                    <h4>Price: <span class="shop-item-price">252€</span></h4>
+                  </div>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <p><b>Shipping:</b> No clue, depends</p>
+                  <p><b>Description:</b> Works</p>
+                </div>
+              </div>
+
+
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="cart">
+        <section class="container content-section">
+            <h2 class="section-header" key="cart2">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column" key="item">ITEM</span>
+                <span class="cart-price cart-header cart-column" key="price">ONE QNT PRICE</span>
+                <span class="cart-quantity cart-header cart-column" key="qnt">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title" key="total">Total</strong>
+                <span class="cart-total-price">0€</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button" key="purchase">PURCHASE</button>
+        </section>
+          </div>
+    </article>
+    <!-- Footeris -->
+    <div id="footer-placeholder">
+      <script>
+        $.get("footer.html", function(data){
+            $("#footer-placeholder").replaceWith(data);
+        });
+        </script></div>
+    <!-- footerio pabaiga -->
+
+</body> 
+    <script src="carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="popup.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="lang.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</html>
